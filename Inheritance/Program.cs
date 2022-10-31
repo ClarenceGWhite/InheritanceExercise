@@ -29,11 +29,48 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            var myBird = new Bird();
+
+            myBird.CanFly = true;
+            myBird.Migrates = true;
+            myBird.Farmed = false;
+            myBird.Tropical = false;
+
+
+            
+
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+
+            var myReptile = new Reptile();
+            
+            myReptile.Friendly = true;
+            myReptile.Poisonous = false;
+            myReptile.WarmCold = "Cold";
+            myReptile.Scales = false;
+
+
+            
+
+            Console.WriteLine($"The {myBird.Name} is a {myBird.LargeOrSmall} animal that runs {myBird.RunFast} and has {myBird.NumberOfLegs} legs.");
+            Console.WriteLine($"It can fly: {myBird.CanFly}.");
+            Console.WriteLine($"It migrates: {myBird.Migrates}.");
+            Console.WriteLine($"It is tropical: {myBird.Tropical}");
+            Console.WriteLine($"It is farmed: {myBird.Farmed}");
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine($"The {myReptile.Name} is a {myReptile.LargeOrSmall} animal that runs {myReptile.RunFast} and has {myReptile.NumberOfLegs} legs.");
+            Console.WriteLine($"It is friendly: {myReptile.Friendly}.");
+            Console.WriteLine($"It is poisonous: {myReptile.Poisonous}.");
+            Console.WriteLine($"It is cold or warm blooded: {myReptile.WarmCold}");
+            Console.WriteLine($"It has scales: {myReptile.Scales}");
+
         }
     }
 }
